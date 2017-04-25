@@ -1,0 +1,638 @@
+/*
+======================== Style ========================
+*/
+
+/*
+========== General ==========
+*/
+* {
+    font-family: 'Heebo', sans-serif;
+    box-sizing: border-box; 
+}
+
+html, body {
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.fullcontainer {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: auto; 
+}
+
+/*
+========== Main ==========
+*/
+
+/*
+===== Menu/Nav =====
+*/
+.headMenu
+{
+    margin: 0;
+    height: 90px;
+    width: 100%;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headMenu .logo 
+{
+    margin: 0;
+    height: 75px;
+    width: 70px;
+    margin-left: 80px;
+}
+
+.headMenu .logo a img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.headMenu .info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /*border: 1px solid #000;*/
+    margin-right: 60px;
+    margin-top: 10px;
+}
+
+.headMenu .info h1
+{
+    font-size: 2.8em;
+}
+
+.headMenu .info p
+{
+    -webkit-margin-before: 0em;
+}
+
+.headMenu .info p a
+{
+    color: red;
+    text-decoration: none;
+}
+
+.headNav
+{
+    margin: 0;
+    height: 45px;
+    width: 100%;
+    background: #d80000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headNav .navList
+{
+    /*list-style-type: none;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /*border: 1px solid #000;*/
+}
+
+.headNav .navList a
+{
+    color: #fff;
+    margin-right: 30px;
+    font-size: 1.3em;
+    height: 100%;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.headNav .navList a:hover
+{
+    text-decoration: none;
+    background: #fff;
+    color: #d80000;
+    font-weight: bold;
+}
+
+/*
+===== Home =====
+*/
+.home-header {
+    margin: 0;
+    height: 500px;
+    background: url('img/civicsi.jpg') center center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.homeHomeOverlay {
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(242, 242, 242, 0.1);
+}
+
+.home-preapprove
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #d80000;
+    height: 140px;
+    width: 100%;
+}
+
+.home-preapprove .carkeys
+{
+    width: 118px;
+    height: 80px;
+}
+
+.home-preapprove .carkeys img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.home-preapprove .text
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-preapprove .text h2
+{
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.home-preapprove .text a
+{
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 4px 10px;
+    font-size: 1.7em;
+    transition: .3s;
+    border-radius: 4px;
+}
+
+.home-preapprove .text a:hover
+{
+    color: #d80000;
+    background: #fff;
+    font-weight: bold;
+}
+
+.home-preapprove .coincar
+{
+    width: 145px;
+    height: 80px;
+}
+
+.home-preapprove .coincar img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.homeAboutus
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('img/benzinside.jpg') center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 560px;
+    width: 100%;
+}
+
+.homeAboutus-overlay
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253,253,253,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeAboutus-overlay p
+{
+    color: #2d2d2d;
+    font-size: 1.3em;
+    width: 60%;
+    background: #fff;
+    padding: 6px 20px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cardsHomeAboutus
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card-homeAboutus
+{
+    border: 1px solid #b7b7b7;
+}
+
+.card-homeAboutus .text
+{
+    background: #e5e5e5;
+    width: 265px;
+    height: 110px;
+    text-align: center;
+}
+
+.card-homeAboutus .text h3
+{
+    padding-top: 10px;
+}
+
+.homeInventaire
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fcfcfc;
+    height: 500px;
+    width: 100%;
+}
+
+.homeInventaire h1
+{
+    font-size: 3em;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.cardsHomeInventaire
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /*border: 1px solid red;*/
+}
+
+.card-homeInventaire
+{
+    border: 1px solid #b7b7b7;
+}
+
+.card-homeInventaire .photo
+{
+    height: 225px;
+    width: 300px;
+}
+
+.card-homeInventaire .text
+{
+    background: #e5e5e5;
+    width: 300px;
+    height: 110px;
+    text-align: center;
+}
+
+.card-homeInventaire .text h3
+{
+    padding-top: 10px;
+}
+
+.card-homeInventaire .text .price
+{
+    color: #ac0000;
+    font-weight: bold;
+}
+
+.homeHappycust
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('img/happycust.jpeg') center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 520px;
+    width: 100%;
+}
+
+.homeHappycust .happycustOverlay
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(151, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeHappycust .happycustOverlay .text
+{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /*margin-top: 90px;*/
+}
+
+.homeHappycust .happycustOverlay .text h2
+{
+    font-size: 4.3em;
+    font-weight: bold;
+}
+
+.homeHappycust .happycustOverlay .text h4
+{
+    font-size: 3.3em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.homeHappycust .happycustOverlay .text p
+{
+    width: 60%;
+    font-size: 2em;
+    line-height: 110%;
+    margin-bottom: 20px;
+}
+
+.homeHappycust .happycustOverlay .text .homehappycall
+{
+    color: #fff;
+    background: none;
+    border: 5px solid #fff;
+    font-size: 3em;
+    cursor: pointer;
+    transition: .3s;
+    padding: 0 8px;
+    border-radius: 5px;
+}
+
+.homeHappycust .happycustOverlay .text .homehappycall:hover
+{
+    color: #fff;
+    background: #970000;
+    border: 5px solid #970000;
+    text-decoration: none;
+}
+
+.homeForm
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F3EAEA;
+    height: 750px;
+    width: 100%;
+}
+
+.homeForm .content
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #000;*/
+}
+
+.homeForm .content h2
+{
+    font-size: 4em;
+    -webkit-margin-after: 0em;
+}
+
+.homeForm .content h5
+{
+    font-size: 2.2em;
+    -webkit-margin-before: 0em;
+    color: #970000;
+}
+
+.homeForm .content p
+{
+    font-size: 1.4em;
+    -webkit-margin-before: 0em;
+}
+
+.homeForm .content form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /*border: 1px solid #000;*/
+}
+
+.homeForm .content form input[name="name"]
+{
+    background: rgba(242,242,242,0.3);
+    border: 1px solid #CECECE;
+    width: 40%;
+    height: 45px;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    text-indent: 8px;
+}
+
+.homeForm .content form input[name="phone"]
+{
+    background: rgba(242,242,242,0.3);
+    border: 1px solid #CECECE;
+    width: 40%;
+    height: 45px;
+    outline: rgba(242,242,242,0.3);
+    margin-bottom: 20px;
+    border-radius: 2px;
+    text-indent: 8px;
+}
+
+.homeForm .content form input[name="email"]
+{
+    background: rgba(242,242,242,0.3);
+    border: 1px solid #CECECE;
+    width: 40%;
+    height: 45px;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    text-indent: 8px;
+}
+
+.homeForm .content form textarea[name="message"]
+{
+    background: rgba(242,242,242,0.3);
+    border: 1px solid #CECECE;
+    width: 40%;
+    height: 130px;
+    outline: none;
+    margin-bottom: 40px;
+    border-radius: 2px;
+    text-indent: 8px;
+}
+
+.homeForm .content form button
+{
+    background: #089F3A;
+    border: 3px solid #089F3A;
+    color: #fff;
+    font-size: 2.3em;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    border-radius: 100%;
+    padding: 20px 30px;
+    transition: .3s;
+}
+
+.homeForm .content form button:hover
+{
+    background: #fff;
+    border: 3px solid #fff;
+    color: #089F3A;
+}
+
+.homeForm .content form button:focus
+{
+    background: #fff;
+    border: 3px solid rgba(8,159,58,0.4);
+    color: #089F3A;
+}
+
+.homeForm .content .homeFormResult
+{
+    margin: 0;
+    /*border: 1px solid #000;*/
+    width: 100%;
+    height: 50px;
+}
+
+
+/*
+===== Footer =====
+*/
+.footer
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .foot-1
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    /*margin-top: 30px;*/
+    width: 100%;
+    height: 120px;
+    background: yellow;
+}
+
+.footer .foot-2
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    background: #191919;
+}
+
+.footer .foot-2 .copyright
+{
+    /*border: 1px solid #000;*/
+    width: 80%;
+    padding-left: 30px;
+}
+
+.footer .foot-2 .copyright p 
+{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    color: #fff;
+}
+
+#ksTag
+{
+    color: #fff;
+}
+
+.footer .foot-2 .ksShout
+{
+    /*border: 1px solid #000;*/
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .foot-2 .ksShout .shoutContainer
+{
+    display: flex;
+    justify-content: space-around;
+    width: 230px;
+    /*background: red;*/
+}
+
+.footer .foot-2 .ksShout .shoutContainer p
+{
+    color: #fff;
+}
+
+#ksLogo
+{
+    width: 25px;
+    height: 25px;
+    /*margin-top: 5px;*/
+}
+
+#ksLogo img
+{
+    width: 100%;
+    height: 100%;
+}
